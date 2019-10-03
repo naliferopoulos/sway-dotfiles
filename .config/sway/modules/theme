@@ -1,0 +1,36 @@
+# Color Pallete
+set $grey                #212121
+set $valencia            #e64a19                                                                                
+set $magenta             #a673a6                                                                                
+set $blue                #7182A8                                                                                
+set $cyan                #6da3a1                                                                                
+set $black               #000000                                                                                
+set $white               #fefefe                                                                                
+set $yellow              #27c282                                                                                
+set $red                 #aa0e50                                                                                
+set $green               #1dcc9f                                                                                
+                                                                                                 
+set $bg-color            #212121                                                                                
+set $inactive-bg-color   #212121                                                                                
+set $text-color          #ffffff                                                                                
+set $inactive-text-color #212121                                                                                
+set $urgent-bg-color     #e64a19                                                                                
+
+# Dynamic Color Scheme
+include "$HOME/.cache/wal/colors-sway"
+
+# class                 border              background         text                 indicator   child_border    
+client.focused          $background         $background        $white               $background $background     
+client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color $background $background     
+client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color $background $background
+client.urgent           $background         $background        $white               $background $background
+client.background       $background
+
+# Static Color scheme                                                                                                  
+
+# class                 border              background         text                 indicator child_border    
+#client.focused          $bg-color           $bg-color          $white               $bg-color $bg-color     
+#client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color $bg-color $bg-color     
+#client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color $bg-color $bg-color   
+#client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          $bg-color $bg-color
+#client.background       $bg-color

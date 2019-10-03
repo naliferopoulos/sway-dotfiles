@@ -1,0 +1,17 @@
+bar {    
+	position top
+	font pango: Hack Nerd Font 14
+	pango_markup enabled
+	gaps 12 12 0 12                                                                                                  
+	height 40
+	separator_symbol " "
+	status_command i3status -c ~/.config/i3status/config
+	strip_workspace_numbers yes
+	colors {
+		statusline $background               
+		background $background                                
+		inactive_workspace $background $background $white    
+		active_workspace $background $background $valencia             
+		focused_workspace $background $background $valencia
+	}                                                                    
+} 

@@ -1,0 +1,38 @@
+### Variables
+include "modules/general"
+
+### Theme
+include "modules/theme"
+
+### Key bindings
+include "modules/bindings"
+
+### Motions:
+include "modules/motion"
+
+### Workspaces:
+include "modules/workspace"
+
+### Layout Keybindings:
+include "modules/layout"
+
+### Scratchpad:
+include "modules/scratchpad"
+
+### Resizing:
+include "modules/resize"
+
+### Status Bar:
+include "modules/bar"
+
+### Window Styles:
+include "modules/window"
+
+### Keymaps:
+include "modules/keymaps"
+
+### Defaults:
+include "modules/defaults"
+
+### Config Base:
+include /usr/local/etc/sway/config.d/*

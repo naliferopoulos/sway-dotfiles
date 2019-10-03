@@ -1,0 +1,6 @@
+gaps inner 12
+gaps outer -2
+
+for_window [class="^.*"] border pixel 4
+
+hide_edge_borders --i3 smart

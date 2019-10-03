@@ -1,0 +1,30 @@
+ # Start a terminal
+bindsym $mod+Return exec $term
+ 
+# Kill focused window
+bindsym $mod+q kill
+ 
+# Start your launcher
+bindsym $mod+d exec $menu
+ 
+# Drag floating windows by holding down $mod and left mouse button.
+# Resize them with right mouse button + $mod.
+# Despite the name, also works for non-floating windows.
+# Change normal to inverse to use left mouse button for resizing and right
+# mouse button for dragging.
+floating_modifier $mod normal
+ 
+# Reload the configuration file
+bindsym $mod+Shift+c reload
+ 
+# Exit sway. TODO: Make this a Rofi menu.
+bindsym $mod+Shift+e exec swaynag -t warning -m 'Do you really want to exit sway?' -b 'Exit' 'swaymsg exit'
+
+# Take screenshot directly to clipboard.
+bindsym $mod+n exec grim -g "$(slurp -d)" - | wl-copy
+
+# Take screenshot to Pictures directory.
+bindsym print exec --no-startup-id slurp | grim -g - $(xdg-user-dir PICTURES)/$(date +'Screenshot_%Y-%m-%d-%H%M%S.png')
+
+# Lock the screen
+bindsym $mod+l exec swaylock -i ~/.config/sway/base.png --config ~/.config/swaylock/config

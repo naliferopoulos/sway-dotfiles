@@ -1,0 +1,20 @@
+# Logo key. Use Mod1 for Alt.    
+set $mod Mod4    
+
+# Home row direction keys, like vim
+set $left h
+set $down j
+set $up k
+set $right l
+ 
+# Terminal emulator
+set $term urxvt
+     
+# Application launcher    
+set $menu zsh -c "rofi -show drun -display-drun '$USER' -show-icons"    
+     
+# Font configuration    
+font pango:San Francisco Text Regular 12    
+     
+# Wallpaper    
+output * bg ~/.config/sway/base.png fill 

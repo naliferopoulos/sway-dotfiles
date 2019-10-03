@@ -1,0 +1,2 @@
+exec xrdb -load ~/.Xresources
+exec wal -R

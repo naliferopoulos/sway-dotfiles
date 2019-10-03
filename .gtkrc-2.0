@@ -1,0 +1,11 @@
+gtk-can-change-accels = 1
+
+gtk-icon-theme-name = "Pop-slim-dark"
+gtk-theme-name = "Pop-slim-dark"
+
+style "user-font"
+{
+        font_name="San Francisco Text 12"
+}
+widget_class "*" style "user-font"
+gtk-font-name = "San Francisco Text 12"
